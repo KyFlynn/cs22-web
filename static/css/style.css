@@ -293,13 +293,13 @@ img.staff-photo {
     width: 100%;
     height: auto;
     object-fit: cover;
-    margin-bottom: 20px;
-}
-
-div.staff-tile > h2 {
     margin: 0
 }
 
-div.staff-tile > p {
+div.staff-tile > div > h2 {
+    margin: 0
+}
+
+div.staff-tile > div > p {
     margin: 5px
 }
