@@ -171,32 +171,32 @@ img.planet-earth {
 }
 img.planet-mars {
     width: 500px;
-    top: 280vh;
+    top: 300vh;
     left: 10vw;
 }
 img.planet-jupiter {
     width: 1000px;
-    top: 310vh;
+    top: 360vh;
     left: 60vw;
 }
 img.planet-saturn {
     width: 1200px;
-    top: 400vh;
+    top: 430vh;
     left: -10vw;
 }
 img.planet-uranus {
     width: 500px;
-    top: 420vh;
+    top: 480vh;
     left: 70vw;
 }
 img.planet-neptune {
     width: 450px;
-    top: 480vh;
+    top: 560vh;
     left: 10vw;
 }
 img.planet-pluto {
     width: 450px;
-    top: 500vh;
+    top: 600vh;
     left: 60vw;
 }
 
