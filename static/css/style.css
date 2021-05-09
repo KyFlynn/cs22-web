@@ -16,12 +16,12 @@
     --color-off-black: #11172D;
     --color-white: #F5F5F5;
     --color-off-white: #E8E8E8;
-    --color-planet-1: #FF7229;
-    --color-planet-2: #4886B2;
-    --color-planet-3: #FFB677;
-    --color-planet-4: #6C7CFB;
-    --color-planet-5: #D6B367;
-    --color-planet-6: #79C9D5;
+    --color-planet-1: #4dc4e2;
+    --color-planet-2: #FF714D;
+    --color-planet-3: #6C7CFB;
+    --color-planet-4: #F7BB66;
+    --color-planet-5: #AAE1BD;
+    --color-planet-6: #8CA77F;
 }
 
 *,
@@ -73,8 +73,10 @@ h5 {
     font-weight: 700;
 }
 
+
 a {
-    color: var(--color-white)
+    color: var(--color-white);
+    text-decoration-color: var(--color-planet-1);
 }
 
 img {
@@ -92,7 +94,7 @@ iframe {
 
 div.iframe-container {
     width: 90%;
-    margin: auto;
+    margin: 20px auto;
     max-width: var(--md-width);
     height: 600px;
 }
@@ -102,6 +104,16 @@ div.iframe-container {
         height: 400px;
     }
 }
+
+div.lightbox {
+    padding: 25px 50px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+/* =================================== */
+/* UNDERLINES AND PLANETS*/
+/* =================================== */
 
 .ul {
     text-decoration: underline;
@@ -123,6 +135,56 @@ div.iframe-container {
 }
 .ul-6 {
     text-decoration-color: var(--color-planet-6) !important;
+}
+
+img.planet {
+    z-index: -1;
+    position: absolute;
+}
+img.planet-sun {
+    width: 700px;
+    top: 50%;
+    right: 30%;
+}
+img.planet-mercury {
+    width: 300px;
+    top: 120%;
+    right: 80%;
+}
+img.planet-venus {
+    width: 400px;
+    top: 150%;
+    right: 10%;
+}
+img.planet-earth {
+    width: 500px;
+    top: 200%;
+    right: 60%;
+}
+img.planet-mars {
+    width: 500px;
+    top: 250%;
+    right: 10%;
+}
+img.planet-jupiter {
+    width: 1000px;
+    top: 300%;
+    right: 60%;
+}
+img.planet-saturn {
+    width: 700px;
+    top: 400%;
+    right: 0%;
+}
+img.planet-uranus {
+    width: 500px;
+    top: 450%;
+    right: 70%;
+}
+img.planet-neptune {
+    width: 450px;
+    top: 480%;
+    right: 10%;
 }
 
 
@@ -171,12 +233,7 @@ span.nav-link > a:hover {
 }
 
 span.nav-link-main > a {
-    font-size: var(--fs-lg)
-}
-
-div.lightbox {
-    padding: 25px 50px;
-    background-color: rgba(200, 200, 200, 0.2);
+    font-size: var(--fs-lg);
 }
 
 
@@ -192,9 +249,16 @@ div.landing-container {
     margin: 10vh 0;
 }
 
+div.landing-left {
+    margin-right: 25px;
+}
+
 h1.landing-title {
+    display: inline-block;
     font-size: var(--fs-hg);
+    border-bottom: 4px solid var(--color-planet-1);
     margin: 0;
+    margin-bottom: 10px;
 }
 
 h2.landing-subtitle {
@@ -204,24 +268,23 @@ h2.landing-subtitle {
 
 img.landing-logo {
     width: 300px;
-    margin: 50px;
+    margin: -40px;
 }
 
 div.ring {
-    margin: 20px;
+    margin: 15px;
     border-radius: 1000px;
     border: 2px solid white;
 }
 
 @media screen and (max-width: 768px) {
-    div.landing-container {
-        flex-direction: column;
-        text-align: center;
+    section#landing {
+        margin: 10vh 0;
     }
 
-    img.landing-logo {
-        width: 200px;
-        margin: 20px;
+    div.landing-container {
+        margin: 10vh 0;
+        flex-direction: column;
     }
 
     h1.landing-title,
@@ -250,12 +313,11 @@ td {
 th {
     font-family: "Roboto Slab", Georgia, serif;
     font-size: var(--fs-md);
-    background-color: rgba(255, 255, 255, 0.2);
-    color: 
+    background-color: rgba(0, 0 , 0, 0.5);
 }
 
 td {
-    background-color: rgba(200, 200, 200, 0.2);
+    background-color: rgba(0, 0 , 0, 0.3);
     border-top: 1px solid lightgrey;
     transition: background-color linear 0.1s;
 }
