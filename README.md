@@ -6,3 +6,6 @@
 - Staff constellations on hover
 - JS to position the planets
 - Clean up documents
+- Lightbox and table padding on mobile
+- Astronaut on top of title on mobile
+- Weird profile spacing on mobile
