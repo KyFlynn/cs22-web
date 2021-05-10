@@ -171,32 +171,32 @@ img.planet-earth {
 }
 img.planet-mars {
     width: 500px;
-    top: 280vh;
+    top: 300vh;
     left: 10vw;
 }
 img.planet-jupiter {
     width: 1000px;
-    top: 310vh;
+    top: 360vh;
     left: 60vw;
 }
 img.planet-saturn {
     width: 1200px;
-    top: 400vh;
+    top: 430vh;
     left: -10vw;
 }
 img.planet-uranus {
     width: 500px;
-    top: 420vh;
+    top: 480vh;
     left: 70vw;
 }
 img.planet-neptune {
     width: 450px;
-    top: 480vh;
+    top: 560vh;
     left: 10vw;
 }
 img.planet-pluto {
     width: 450px;
-    top: 500vh;
+    top: 600vh;
     left: 60vw;
 }
 
@@ -353,7 +353,7 @@ td {
 
 div.staff-tiling {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 50px;
     width: 90%;
     max-width: var(--md-width);
@@ -375,12 +375,30 @@ div.staff-tile {
     text-align: center;
 }
 
-img.staff-photo {
+div.effect img.staff-photo {
     width: 100%;
     max-width: 40vw;
     height: auto;
     object-fit: cover;
     margin: 0;
+    transition-delay:2s;
+}
+
+div.effect:hover img.staff-photo{
+    display:none;
+}
+
+div.effect img.staff-photo-hover{
+    width: 100%;
+    max-width: 40vw;
+    height: auto;
+    object-fit: cover;
+    margin: 0;
+    display:none;
+}
+
+div.effect:hover img.staff-photo-hover{
+    display:block;
 }
 
 div.staff-tile > div.lightbox {
