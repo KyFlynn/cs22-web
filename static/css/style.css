@@ -375,12 +375,30 @@ div.staff-tile {
     text-align: center;
 }
 
-img.staff-photo {
+div.effect img.staff-photo {
     width: 100%;
     max-width: 40vw;
     height: auto;
     object-fit: cover;
     margin: 0;
+    transition-delay:2s;
+}
+
+div.effect:hover img.staff-photo{
+    display:none;
+}
+
+div.effect img.staff-photo-hover{
+    width: 100%;
+    max-width: 40vw;
+    height: auto;
+    object-fit: cover;
+    margin: 0;
+    display:none;
+}
+
+div.effect:hover img.staff-photo-hover{
+    display:block;
 }
 
 div.staff-tile > div.lightbox {
