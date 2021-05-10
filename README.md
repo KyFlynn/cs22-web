@@ -9,3 +9,5 @@
 - Lightbox and table padding on mobile
 - Astronaut on top of title on mobile
 - Weird profile spacing on mobile
+- No STA-UTA; only STA
+- Calder => Calder Ruhl Hansen
