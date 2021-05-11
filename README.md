@@ -1,5 +1,4 @@
 # TODO
-- Decide on a bg color
-- Recitation dates
-- Clean up documents
-- Staff photos + bios + emoji + correct constellation
+- Easter eggs!
+- HW + Rec Dates
+- Staff photos + bios + emoji + bday + correct constellation
