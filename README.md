@@ -1,13 +1,5 @@
 # TODO
-- Review w/ HTAs
-- Planets on mobile view
-- Nav on mobile view
-- Staff photos + bios + emoji
-- Staff constellations on hover
-- JS to position the planets
+- Decide on a bg color
+- Recitation dates
 - Clean up documents
-- Lightbox and table padding on mobile
-- Astronaut on top of title on mobile
-- Weird profile spacing on mobile
-- No STA-UTA; only STA
-- Calder => Calder Ruhl Hansen
+- Staff photos + bios + emoji + correct constellation

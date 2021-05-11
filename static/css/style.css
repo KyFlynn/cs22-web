@@ -11,8 +11,9 @@
     --fs-lg: 2rem;
     --fs-md: 1.3rem;
     --fs-sm: 1rem;
+    --fs-xs: 0.8rem;
 
-    --color-black: #1b2549;
+    --color-black: #060912;
     --color-off-black: #11172d;
     --color-white: #f5f5f5;
     --color-off-white: #e8e8e8;
@@ -39,8 +40,9 @@ html {
 body {
     font-family: "Roboto Mono", Monaco, sans-serif;
     font-weight: 400;
-    /* background-color: var(--color-black); */
-    background-color: #000;
+    /* NOTE: We should decide on smth here */
+    background-color: var(--color-black);
+    /* background-color: #000; */
     margin: 0;
     padding: 0;
     display: flex;
@@ -120,6 +122,12 @@ div.lightbox {
     background-color: rgba(0, 0, 0, 0.5);
 }
 
+@media screen and (max-width: 768px) {
+    div.lightbox {
+        padding: 15px;
+    }
+}
+
 /* =================================== */
 /* UNDERLINES AND PLANETS*/
 /* =================================== */
@@ -146,66 +154,12 @@ div.lightbox {
     text-decoration-color: var(--color-planet-6) !important;
 }
 
+/* NOTE: Planet placement/sizing is done in js/script.js */
 img.planet {
     z-index: -1;
     position: absolute;
 }
-img.planet-sun {
-    width: 700px;
-    top: 50vh;
-    left: 30vw;
-}
-img.planet-mercury {
-    width: 300px;
-    top: 120vh;
-    left: 70vw;
-}
-img.planet-venus {
-    width: 400px;
-    top: 150vh;
-    left: 20vw;
-}
-img.planet-earth {
-    width: 500px;
-    top: 240vh;
-    left: 60vw;
-}
-img.planet-mars {
-    width: 500px;
-    top: 300vh;
-    left: 10vw;
-}
-img.planet-jupiter {
-    width: 1000px;
-    top: 360vh;
-    left: 60vw;
-}
-img.planet-saturn {
-    width: 1200px;
-    top: 430vh;
-    left: -10vw;
-}
-img.planet-uranus {
-    width: 500px;
-    top: 480vh;
-    left: 70vw;
-}
-img.planet-neptune {
-    width: 450px;
-    top: 560vh;
-    left: 10vw;
-}
-img.planet-pluto {
-    width: 450px;
-    top: 600vh;
-    left: 60vw;
-}
 
-@media screen and (max-width: 768px) {
-    img.planet {
-        display: none;
-    }
-}
 
 /* =================================== */
 /* NAVBAR */
@@ -225,7 +179,7 @@ div.nav-nav {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    background-color: var(--color-black);
+    background-color: var(--color-off-black);
 }
 
 @media screen and (max-width: 768px) {
@@ -306,12 +260,12 @@ div.ring {
 
 @media screen and (max-width: 768px) {
     section#landing {
-        margin: 10vh 0;
+        margin: 5vh 0;
     }
 
     div.landing-container {
-        margin: 10vh 0;
-        flex-direction: column;
+        margin: 5vh 0;
+        flex-direction: column-reverse;
     }
 
     h1.landing-title,
@@ -343,7 +297,7 @@ th {
 }
 
 td {
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.4);
     border-top: 1px solid lightgrey;
     transition: background-color linear 0.1s;
 }
@@ -361,13 +315,6 @@ div.staff-tiling {
     margin: auto;
 }
 
-@media screen and (max-width: 768px) {
-    div.staff-tiling {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 25px;
-    }
-}
-
 div.staff-tile {
     display: flex;
     flex-direction: column;
@@ -376,29 +323,27 @@ div.staff-tile {
     text-align: center;
 }
 
-div.effect img.staff-photo {
+div.effect {
+    height: 100%;
+}
+
+div.effect > img.staff-photo {
     width: 100%;
     max-width: 40vw;
     height: auto;
     object-fit: cover;
     margin: 0;
-    transition-delay:2s;
 }
 
-div.effect:hover img.staff-photo{
+div.effect > img.staff-photo-hover {
     display:none;
 }
 
-div.effect img.staff-photo-hover{
-    width: 100%;
-    max-width: 40vw;
-    height: auto;
-    object-fit: cover;
-    margin: 0;
+div.effect:hover > img.staff-photo {
     display:none;
 }
 
-div.effect:hover img.staff-photo-hover{
+div.effect:hover > img.staff-photo-hover {
     display:block;
 }
 
@@ -413,4 +358,19 @@ div.staff-tile > div.lightbox > h2 {
 
 div.staff-tile > div.lightbox > p {
     margin: 5px;
+}
+
+@media screen and (max-width: 768px) {
+    div.staff-tiling {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+
+    /* NOTE: These are really small, but they fix shitty alignment */
+    div.staff-tile > div.lightbox > h2 {
+        font-size: var(--fs-sm)
+    }
+    div.staff-tile > div.lightbox > p {
+        font-size: var(--fs-xs)
+    }
 }
