@@ -28,3 +28,12 @@ function placePlanets() {
 
 $(window).resize(placePlanets);
 $(document).ready(placePlanets);
+
+// Swapping astronauts
+let counter = 0;
+const prefix = "static/img/planets/";
+const astronauts = ["astronaut.png", "astronaut_person.png", "astronaut_shrek.png"];
+$('#astronaut').click(() => {
+    counter++;
+    $('#astronaut').attr("src", prefix + astronauts[counter % 3]);
+})
