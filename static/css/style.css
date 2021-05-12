@@ -171,6 +171,31 @@ img.planet {
     position: absolute;
 }
 
+.orbit-1 {
+    animation-delay: 0s;
+    animation: orbit 8s linear infinite;
+}
+
+.orbit-2 {
+    animation-delay: 1s;
+    animation: orbit 6s linear infinite;
+}
+
+.orbit-3 {
+    animation-delay: 3s;
+    animation: orbit 11s linear infinite;
+}
+
+.orbit-4 {
+    animation-delay: 2s;
+    animation: orbit 14s linear infinite;
+}
+
+@keyframes orbit {
+    from { transform: rotate(0deg) translateX(10px) rotate(0deg); }
+    to   { transform: rotate(360deg) translateX(10px) rotate(-360deg); }
+}
+
 
 /* =================================== */
 /* NAVBAR */
