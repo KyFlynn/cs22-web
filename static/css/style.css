@@ -398,6 +398,7 @@ div.effect:hover > img.staff-photo {
 
 div.effect:hover > img.staff-photo-hover {
     display:block;
+    margin-bottom: 4px;
 }
 
 div.staff-tile > div.lightbox {
