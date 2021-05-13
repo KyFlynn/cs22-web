@@ -380,10 +380,6 @@ div.staff-tile {
     text-align: center;
 }
 
-div.effect {
-    height: 100%;
-}
-
 div.effect > img.staff-photo {
     width: 100%;
     max-width: 40vw;
@@ -406,7 +402,7 @@ div.effect:hover > img.staff-photo-hover {
 
 div.staff-tile > div.lightbox {
     margin: 0;
-    padding: 10px 20px;
+    padding: 5px 10px;
 }
 
 div.staff-tile > div.lightbox > h2 {
