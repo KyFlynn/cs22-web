@@ -145,6 +145,7 @@ div.lightbox {
 
 .ul {
     text-decoration: underline;
+    text-underline-offset: 6px;
 }
 .ul-1 {
     text-decoration-color: var(--color-planet-1) !important;
@@ -269,7 +270,9 @@ span.nav-link > a:hover {
 }
 
 span.nav-link-main > a {
+    display: inline-block;
     font-size: var(--fs-lg);
+    margin-bottom: 5px;
 }
 
 /* =================================== */
